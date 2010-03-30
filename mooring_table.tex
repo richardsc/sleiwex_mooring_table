@@ -1,0 +1,60 @@
+% SLEIWEX mooring table
+% To add:
+% - Change depth column to be: Planned, Water, Instrument
+%   - Water depth should perhaps come from chart? or bathymetry?
+% - Plain text table for wiki
+
+\documentclass[letterpaper,10pt,landscape]{article}
+
+\usepackage{anysize}
+\usepackage{lscape}
+\usepackage{multirow}
+
+\marginsize{0.5in}{0.5in}{0.5in}{0.5in}
+
+\begin{document}
+\thispagestyle{empty}
+
+  \begin{table}
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+      \hline
+      \multicolumn{2}{|c|}{{\bf Name}}         & {\bf Lon}                    & {\bf Lat}                   & {\bf $x$ (m)}             & {\bf $y$ (m)}           & {\bf Sensors}      & {\bf HAB}  & \multicolumn{3}{|c|}{{\bf Depth (m)}} \\
+      {\bf New}           & {\bf Old}          &                              &                             &                           &                         &                    & {\bf (m)}  & {\bf Planned}       & {\bf Instrument}  & {\bf Water} \\
+                                                                                                                                                                                                                          
+      \hline \hline                                                                                                                                                                                                       
+                                                                                                                                                                                                                          
+      M1                  & A                  & -69.7191333                  & 47.8767333                  & -209.1                    & 34.8                    & PT sensor          & $\sim0.20$ & 1                   & 1.76$\pm$1.10     & \\ \hline
+      M2                  & B                  & -69.7197667                  & 47.8770000                  & -265.0                    & 35.4                    & Vector SN1072      & 0.962      & 2.5                 & NA                & \\ \hline
+      M3                  & I                  & -69.7214722                  & 47.8784444                  & -457.6                    & 106.0                   & ADV (MUN)          & 0.82       & 5                   & 5.93$\pm$1.14     & \\ \hline
+      M4                  & J                  & -69.7249351                  & 47.8784094                  & -676.0                    & -32.4                   & 1200kHz ADCP (MUN) & 0.4        & 10                  & 11.53$\pm$1.17    & \\ \hline
+      M5                  & K                  & -69.7231459                  & 47.8820245                  & -772.3                    & 380.5                   & 600kHz ADCP (MUN)  & 0.4        & 20                  & 20.06$\pm$1.17    & \\ \hline
+                                                                                                                                                                                                                          
+      \multirow{4}{*}{M6} & \multirow{4}{*}{C} & \multirow{4}{*}{-69.7272910} & \multirow{4}{*}{47.8784397} & \multirow{4}{*}{-827.7}   & \multirow{4}{*}{-121.5} & ADP                & 0.862      & \multirow{4}{*}{10} & NA                & \\ 
+                          &                    &                              &                             &                           &                         & ADV                & 0.645      &                     & NA                & \\ 
+                          &                    &                              &                             &                           &                         & Vector SN1943      & 0.976      &                     & 18.18$\pm$1.05    & \\ 
+                          &                    &                              &                             &                           &                         & AquaDopp           & 1.047      &                     & 16.56$\pm$1.14    & \\ \hline
+                                                                                                                                                                                                                          
+      \multirow{3}{*}{M7} & \multirow{3}{*}{D} & \multirow{3}{*}{-69.7271193} & \multirow{3}{*}{47.8796946} & \multirow{3}{*}{-889.8}   & \multirow{3}{*}{4.3}    & 1200kHz ADCP       & 0.973      & \multirow{3}{*}{20} & 22.31$\pm$1.18    & \\ 
+                          &                    &                              &                             &                           &                         & Vector SN1063      & 0.37       &                     & 23.30$\pm$1.05    & \\ 
+                          &                    &                              &                             &                           &                         & PCADP              & 1.075      &                     & NA                & \\ \hline
+                                                                                                                                                                                                                          
+                                                                                                                                                                                                                          
+      \multirow{4}{*}{M8} & \multirow{4}{*}{E} & \multirow{4}{*}{-69.7298312} & \multirow{4}{*}{47.8807424} & \multirow{4}{*}{-1123.4}  & \multirow{4}{*}{-2.0}   & ADP                & 0.454      & \multirow{4}{*}{30} & NA                & \\ 
+                          &                    &                              &                             &                           &                         & ADV                & 0.581      &                     & NA                & \\ 
+                          &                    &                              &                             &                           &                         & Vector SN1936      & 0.977      &                     & 32.82$\pm$1.06    & \\ 
+                          &                    &                              &                             &                           &                         & RBR TDR chain      & NA         &                     & NA                & \\ \hline
+       M9                 & F                  & -69.7349833                  & 47.8806333                  & -1445.0                   & -213.4                  & 600kHz ADCP        & 0.57       & 40                  & 39.11$\pm$1.03    & \\ \hline
+       M10                & G                  & -69.7605285                  & 47.8920800                  & -3737.1                   & -123.5                  & 300kHz ADCP        & $\sim10$   & 60                  & 57.59$\pm$1.08    & \\ \hline
+       M11                & H                  & -69.7731953                  & 47.8975000                  & -4858.8                   & -103.2                  & 300kHz ADCP        & $\sim30$   & 80                  & 52.59$\pm$1.7     & \\ \hline
+    \end{tabular}
+    \caption{SLEIWEX 2008 moorings. Letter names correspond to the directories currently located on anchor at /data/acoustic/kt-experiments/sleiwex2008/moored/. $x$ and $y$ coordinates are for the rotated coordinate system with origin on the island at the location of the cameras (Latitude: 47.875485; Longitude: -69.716989), and rotated 31.5 degrees clockwise. The x-axis points roughly toward south-east. The y-axis points roughly toward north-east (i.e. positive towards the Gulf). Instrument depths are calculated by averaging the pressure signal from every instrument that had a pressure sensor, with the error given by the standard deviation. Heights above bottom (HAB) are given to the center of the transducers for acoustic instruments - it is not the height of the first bin.}
+  \end{table}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: tex-pdf
+%%% TeX-master: t
+%%% End:
