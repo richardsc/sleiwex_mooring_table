@@ -1,0 +1,12 @@
+#latex files
+*.aux
+*.bbl
+*.blg
+*.log
+*.rel
+*.synctex.gz
+
+#emacs backups
+*~
+
+mooring_table.pdf
