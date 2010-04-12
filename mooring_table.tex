@@ -23,43 +23,45 @@
 \begin{table}
   \centering
   \begin{tabular}{|r|c|c|r|r|r|r|c|c|c|c|c|c|} \hline
-    {\bf Mooring}       & {\bf Lon}                  & {\bf Lat}                 & {\bf $x$ (m)}          & {\bf $y$ (m)}         & {\bf Sensor} &Mfr       & Freq     & $\delta t$&$\delta z$& {\bf HAB}  & {\bf Water}         \\
-    ~                   &                            &                           &                        &                       &              &          &          &           &          & {\bf (m)}  & {\bf Depth (m)}     \\\hline \hline
-    M1                  & -69.71913                  & 47.87673                  & -209                   & 34                    & PT           & RBR      &          & 1         &          & $\sim0.20$ & 1                   \\\hline
-    M2                  & -69.71977                  & 47.87700                  & -265                   & 35                    & ADV          & Nortek   &          & 0.1       &          & 0.962      & 2.5                 \\\hline %SN1072
-    M3                  & -69.72147                  & 47.87844                  & -458                   & 106                   & ADV          & Sontek   &          & 0.1       &          & 0.82       & 5                   \\\hline
-    M4                  & -69.72493                  & 47.87841                  & -676                   & -32                   & ADP          & RDI      & 1200 kHz & 50        &          & 0.4        & 10                  \\\hline
-    M5                  & -69.72315                  & 47.88202                  & -772                   & 381                   & ADP          & RDI      &  600 kHz & 50        &          & 0.4        & 20                  \\\hline
-    \multirow{4}{*}{M6} & \multirow{4}{*}{-69.72729} & \multirow{4}{*}{47.87844} & \multirow{4}{*}{-828}  & \multirow{4}{*}{-121} & ADP          &          &          & 20        &          & 0.862      & \multirow{4}{*}{10} \\ 
-    ~                   &                            &                           &                        &                       & ADV          & Sontek   &          & 0.1       &          & 0.645      &                     \\ 
-    ~                   &                            &                           &                        &                       & ADV          & Nortek   &          & 0.1       &          & 0.976      &                     \\ % SN 1943
-    ~                   &                            &                           &                        &                       & Aquadopp     & Nortek   &          & 10        &          & 1.047      &                     \\\hline
-    \multirow{3}{*}{M7} & \multirow{3}{*}{-69.72712} & \multirow{3}{*}{47.87970} & \multirow{3}{*}{-890}  & \multirow{3}{*}{4}    & ADP          &          & 1200kHz  & 50        &          & 0.973      & \multirow{3}{*}{20} \\ 
-    ~                   &                            &                           &                        &                       & ADV          & Nortek   &          & 0.1       &          & 0.37       &                     \\ % SN1063
-    ~                   &                            &                           &                        &                       & PCADP        & Nortek   &          & 10        &          & 1.075      &                     \\\hline
-    \multirow{4}{*}{M8} & \multirow{4}{*}{-69.72983} & \multirow{4}{*}{47.88074} & \multirow{4}{*}{-1123} & \multirow{4}{*}{-2}   & ADP          &          &          & 20        &          & 0.454      & \multirow{4}{*}{30} \\ 
-    ~                   &                            &                           &                        &                       & ADV          & Sontek   &          & 0.1       &          & 0.581      &                     \\ 
-    ~                   &                            &                           &                        &                       & ADV          & Nortek   &          & 0.1       &          & 0.977      &                     \\ % SN1936
-                        &                            &                           &                        &                       & PT chain     & RBR      &          & 1         &          & (...)      &                     \\\hline
-    M9                  & -69.73498                  & 47.88063                  & -1445                  & -213                  & ADP          & RDI      & 600 KHz  & 10        &          & 0.57       & 40                  \\\hline
-    M10                 & -69.76053                  & 47.89208                  & -3737                  & -123                  & ADP          & RDI      & 300 kHz  & 10        &          & $\sim10$   & 60                  \\\hline
-    M11                 & -69.77319                  & 47.89750                  & -4859                  & -103                  & ADP          & RDI      & 300 kHz  & 10        &          & $\sim30$   & 80                  \\\hline
+    {\bf Mooring}       & {\bf Lon}                  & {\bf Lat}                 & $x$ (m)                & $y$ (m)               & {\bf Sensor} &{\bf Mfr}   & {\bf Freq}&$\delta t$ &$\delta z$& {\bf HAB}  & {\bf Water}         \\
+    ~                   &                            &                           &                        &                       &              &            &           & {\bf (m)} & {\bf (m)}& {\bf (m)}  & {\bf Depth (m)}     \\\hline \hline
+    M1                  & -69.71913                  & 47.87673                  & -209                   & 34                    & PT           & RBR        & NA        & 1         & NA       & $\sim0.20$ & 1                   \\\hline
+    M2                  & -69.71977                  & 47.87700                  & -265                   & 35                    & ADV          & Nortek     & 6 MHz     & 0.1       & NA       & 0.962      & 2.5                 \\\hline %SN1072
+    M3                  & -69.72147                  & 47.87844                  & -458                   & 106                   & ADV          & Sontek     & 5(10?) MHz& 0.1       & NA       & 0.82       & 5                   \\\hline
+    M4                  & -69.72493                  & 47.87841                  & -676                   & -32                   & ADP          & RDI        & 1200 kHz  & 50        & 0.5      & 0.4        & 10                  \\\hline
+    M5                  & -69.72315                  & 47.88202                  & -772                   & 381                   & ADP          & RDI        & 600 kHz   & 50        & 1        & 0.4        & 20                  \\\hline
+    \multirow{4}{*}{M6} & \multirow{4}{*}{-69.72729} & \multirow{4}{*}{47.87844} & \multirow{4}{*}{-828}  & \multirow{4}{*}{-121} & ADP          & Sontek     & 1.5 MHz   & 20        & 1        & 0.862      & \multirow{4}{*}{10} \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Sontek     & 5(10?) MHz& 0.1       & NA       & 0.645      &                     \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Nortek     & 6 MHz     & 0.1       & NA       & 0.976      &                     \\ % SN 1943
+    ~                   &                            &                           &                        &                       & Aquadopp     & Nortek     & 1(2?) MHz & 10        & 0.04     & 1.047      &                     \\\hline
+    \multirow{3}{*}{M7} & \multirow{3}{*}{-69.72712} & \multirow{3}{*}{47.87970} & \multirow{3}{*}{-890}  & \multirow{3}{*}{4}    & ADP          & RDI        & 1200kHz   & 50        & 0.5      & 0.973      & \multirow{3}{*}{20} \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Nortek     & 6 MHz     & 0.1       & NA       & 0.37       &                     \\ % SN1063
+    ~                   &                            &                           &                        &                       & PCADP        & Nortek     & 1.5 MHz   & 10        & 0.05     & 1.075      &                     \\\hline
+    \multirow{4}{*}{M8} & \multirow{4}{*}{-69.72983} & \multirow{4}{*}{47.88074} & \multirow{4}{*}{-1123} & \multirow{4}{*}{-2}   & ADP          & Sontek     & 1.5 MHz   & 20        & 1        & 0.454      & \multirow{4}{*}{30} \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Sontek     & 5(10?) MHz& 0.1       & NA       & 0.581      &                     \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Nortek     & 6 MHz     & 0.1       & NA       & 0.977      &                     \\ % SN1936
+    ~                   &                            &                           &                        &                       & PT chain     & RBR        & NA        & 1         & NA       & (...)      &                     \\\hline
+    M9                  & -69.73498                  & 47.88063                  & -1445                  & -213                  & ADP          & RDI        & 600 KHz   & 10        & 0.5      & 0.57       & 40                  \\\hline
+    M10                 & -69.76053                  & 47.89208                  & -3737                  & -123                  & ADP          & RDI        & 300 kHz   & 10        & 1        & $\sim10$   & 60                  \\\hline
+    \multirow{2}{*}{M11}& \multirow{2}{*}{-69.77319} & \multirow{2}{*}{47.89750} & \multirow{2}{*}{-4859} & \multirow{2}{*}{-103} & ADP          & RDI        & 300 kHz   & 10        & 1        & $\sim30$   & \multirow{2}{*}{80} \\
+    ~                   &                            &                           &                        &                       & S4           & InterOcean & NA        & 60        & NA       & $\sim10$   &                     \\\hline
   \end{tabular}
   
   \caption{Moorings and instruments attached to them.  Here, ``ADV''
     refers to acoustic doppler velocimeters (including units called
     ``ADV'' manufactured by Sontek and called ``Vector'' manufactured
-    by Nortek), ``ADP'' refers to acoustic doppler velocimeters
+    by Nortek), ``ADP'' refers to acoustic doppler profilers
     (called ``ADP'' by Sontek, ``ADCP'' by Teledyne RDI, ``PCADCP'' by
-    ??, and ``aquadopp'' by ??), and ``PT'' refers to
-    pressure-temperature recorders manufactured by ??.  The chain at
-    mooring M8 consisted of ?? units separated by spacing ??m along
+    Sontek, and ``aquadopp'' by Nortek), ``PT'' refers to
+    pressure-temperature recorders manufactured by RBR, and ``S4''
+    refers to S4 current meter manufactured by InterOcean.  The chain at
+    mooring M8 consisted of 7 units separated by spacing $\sim$4m along
     the chain.  Position is indicated by latitude and longitude values
     whose digits correspond to a distance resolution of 1\,m (roughly,
     the mooring size), although the position is not known to better
     than (FILL IN), owing to difficulties of deploying and recovering
     equipment in strong currents.  The values of $x$ and $y$ are
-    coordinates are for the rotated coordinate system with origin on
+    coordinates for the rotated coordinate system with origin on
     the island at the location of the cameras (Latitude: 47.875485;
     Longitude: -69.716989), and rotated 31.5 degrees clockwise. The
     x-axis points roughly toward south-east. The y-axis points roughly
