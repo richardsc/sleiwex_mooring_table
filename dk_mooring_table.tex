@@ -1,0 +1,80 @@
+% SLEIWEX mooring table
+% To add:
+% - Change depth column to be: Planned, Water, Instrument
+%   - Water depth should perhaps come from chart? or bathymetry?
+% - Plain text table for wiki
+
+\documentclass[letterpaper,10pt,landscape]{article}
+
+\usepackage{anysize}
+\usepackage{lscape}
+\usepackage{multirow}
+
+\marginsize{0.5in}{0.5in}{0.5in}{0.5in}
+
+\begin{document}
+\thispagestyle{empty}
+
+% digits:
+%   111e3*(00.00001) = 1.11m
+% so we should have at most 5 digits after the decimal in lat and lon
+
+
+\begin{table}
+  \centering
+  \begin{tabular}{|r|c|c|r|r|r|r|c|c|c|c|c|c|} \hline
+    {\bf Mooring}       & {\bf Lon}                  & {\bf Lat}                 & {\bf $x$ (m)}          & {\bf $y$ (m)}         & {\bf Sensor} &Mfr       & Freq     & $\delta t$&$\delta z$& {\bf HAB}  & {\bf Water}         \\
+    ~                   &                            &                           &                        &                       &              &          &          &           &          & {\bf (m)}  & {\bf Depth (m)}     \\\hline \hline
+    M1                  & -69.71913                  & 47.87673                  & -209                   & 34                    & PT           & RBR      &          &           &          & $\sim0.20$ & 1                   \\\hline
+    M2                  & -69.71977                  & 47.87700                  & -265                   & 35                    & ADV          & Nortek   &          &           &          & 0.962      & 2.5                 \\\hline %SN1072
+    M3                  & -69.72147                  & 47.87844                  & -458                   & 106                   & ADV          & Sontek   &          &           &          & 0.82       & 5                   \\\hline
+    M4                  & -69.72493                  & 47.87841                  & -676                   & -32                   & ADP          &          & 1200 kHz &           &          & 0.4        & 10                  \\\hline
+    M5                  & -69.72315                  & 47.88202                  & -772                   & 381                   & ADP          &          &  600 kHz &           &          & 0.4        & 20                  \\\hline
+    \multirow{4}{*}{M6} & \multirow{4}{*}{-69.72729} & \multirow{4}{*}{47.87844} & \multirow{4}{*}{-828}  & \multirow{4}{*}{-121} & ADP          &          &          &           &          & 0.862      & \multirow{4}{*}{10} \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Sontek   &          &           &          & 0.645      &                     \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Nortek   &          &           &          & 0.976      &                     \\ % SN 1943
+    ~                   &                            &                           &                        &                       & Aquadopp     & Nortek   &          &           &          & 1.047      &                     \\\hline
+    \multirow{3}{*}{M7} & \multirow{3}{*}{-69.72712} & \multirow{3}{*}{47.87970} & \multirow{3}{*}{-890}  & \multirow{3}{*}{4}    & ADP          &          & 1200kHz  &           &          & 0.973      & \multirow{3}{*}{20} \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Nortek   &          &           &          & 0.37       &                     \\ % SN1063
+    ~                   &                            &                           &                        &                       & PCADP        & Nortek   &          &           &          & 1.075      &                     \\\hline
+    \multirow{4}{*}{M8} & \multirow{4}{*}{-69.72983} & \multirow{4}{*}{47.88074} & \multirow{4}{*}{-1123} & \multirow{4}{*}{-2}   & ADP          &          &          &           &          & 0.454      & \multirow{4}{*}{30} \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Sontek   &          &           &          & 0.581      &                     \\ 
+    ~                   &                            &                           &                        &                       & ADV          & Nortek   &          &           &          & 0.977      &                     \\ % SN1936
+                        &                            &                           &                        &                       & PT chain     & RBR      &          &           &          & (...)      &                     \\\hline
+    M9                  & -69.73498                  & 47.88063                  & -1445                  & -213                  & ADP          &          & 600 KHz  &           &          & 0.57       & 40                  \\\hline
+    M10                 & -69.76053                  & 47.89208                  & -3737                  & -123                  & ADP          &          & 300 kHz  &           &          & $\sim10$   & 60                  \\\hline
+    M11                 & -69.77319                  & 47.89750                  & -4859                  & -103                  & ADP          &          & 300 kHz  &           &          & $\sim30$   & 80                  \\\hline
+  \end{tabular}
+  
+  \caption{Moorings and instruments attached to them.  Here, ``ADV''
+    refers to acoustic doppler velocimeters (including units called
+    ``ADV'' manufactured by Sontek and called ``Vector'' manufactured
+    by Nortek), ``ADP'' refers to acoustic doppler velocimeters
+    (called ``ADP'' by Sontek, ``ADCP'' by Teledyne RDI, ``PCADCP'' by
+    ??, and ``aquadopp'' by ??), and ``PT'' refers to
+    pressure-temperature recorders manufactured by ??.  The chain at
+    mooring M8 consisted of ?? units separated by spacing ??m along
+    the chain.  Position is indicated by latitude and longitude values
+    whose digits correspond to a distance resolution of 1\,m (roughly,
+    the mooring size), although the position is not known to better
+    than (FILL IN), owing to difficulties of deploying and recovering
+    equipment in strong currents.  The values of $x$ and $y$ are
+    coordinates are for the rotated coordinate system with origin on
+    the island at the location of the cameras (Latitude: 47.875485;
+    Longitude: -69.716989), and rotated 31.5 degrees clockwise. The
+    x-axis points roughly toward south-east. The y-axis points roughly
+    toward north-east (i.e. positive towards the Gulf). Instrument
+    depths are calculated by averaging the pressure signal from every
+    instrument that had a pressure sensor, with the error given by the
+    standard deviation. Heights above bottom (HAB) are given to the
+    center of the transducers for acoustic instruments - it is not the
+    height of the first bin.}
+  \end{table}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: tex-pdf
+%%% TeX-master: t
+%%% End:
