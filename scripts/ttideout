@@ -1,24 +1,24 @@
 
 file name: ttideout
 date: 13-Apr-2010
-nobs = 330001,  ngood = 330001,  record length (days) = 3.82
-start time: 25-Jun-2008 10:00:00
+nobs = 11531,  ngood = 11531,  record length (days) = 8.01
 rayleigh criterion = 1.0
-Greenwich phase computed, no nodal corrections
+Phases at central time
 
-x0= 11.9, x trend= 0
+x0= 75, x trend= 0
 
-var(x)= 1.2202   var(xp)= 1.1801   var(xres)= 0.041563
-percent var predicted/var original= 96.7 %
+var(x)= 1.8519   var(xp)= 1.3739   var(xres)= 0.47612
+percent var predicted/var original= 74.2 %
 
      tidal amplitude and phase with 95% CI estimates
 
 tide   freq       amp     amp_err    pha    pha_err     snr
-*K1   0.0417807    0.4863    0.144   170.86    20.38       11
-*M2   0.0805114    1.4556    0.136   132.38     6.30  1.1e+02
- M3   0.1207671    0.0121    0.022   167.09   113.36      0.3
-*M4   0.1610228    0.0830    0.025   162.68    20.35       11
- 2MK5 0.2028035    0.0013    0.009   292.00   221.93    0.023
-*M6   0.2415342    0.0176    0.011     6.32    39.75      2.7
- 3MK7 0.2833149    0.0157    0.015   227.58    63.85        1
-*M8   0.3220456    0.0144    0.007   232.08    31.19      4.8
+*K1   0.0417807    0.4466    0.294   193.60    37.93      2.3
+*M2   0.0805114    1.3835    0.411   309.48    15.54       11
+*M3   0.1207671    0.2013    0.113   334.34    35.32      3.2
+*M4   0.1610228    0.7021    0.337   188.54    25.55      4.3
+*2MK5 0.2028035    0.1013    0.062   105.22    38.11      2.7
+ 2SK5 0.2084474    0.0557    0.054   304.59    61.77        1
+*M6   0.2415342    0.1958    0.089   340.84    23.77      4.9
+ 3MK7 0.2833149    0.0203    0.070    77.83   200.88    0.083
+ M8   0.3220456    0.0451    0.053    36.94    82.61     0.72
