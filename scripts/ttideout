@@ -1,0 +1,24 @@
+
+file name: ttideout
+date: 13-Apr-2010
+nobs = 330001,  ngood = 330001,  record length (days) = 3.82
+start time: 25-Jun-2008 10:00:00
+rayleigh criterion = 1.0
+Greenwich phase computed, no nodal corrections
+
+x0= 11.9, x trend= 0
+
+var(x)= 1.2202   var(xp)= 1.1801   var(xres)= 0.041563
+percent var predicted/var original= 96.7 %
+
+     tidal amplitude and phase with 95% CI estimates
+
+tide   freq       amp     amp_err    pha    pha_err     snr
+*K1   0.0417807    0.4863    0.144   170.86    20.38       11
+*M2   0.0805114    1.4556    0.136   132.38     6.30  1.1e+02
+ M3   0.1207671    0.0121    0.022   167.09   113.36      0.3
+*M4   0.1610228    0.0830    0.025   162.68    20.35       11
+ 2MK5 0.2028035    0.0013    0.009   292.00   221.93    0.023
+*M6   0.2415342    0.0176    0.011     6.32    39.75      2.7
+ 3MK7 0.2833149    0.0157    0.015   227.58    63.85        1
+*M8   0.3220456    0.0144    0.007   232.08    31.19      4.8
