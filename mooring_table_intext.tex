@@ -1,26 +1,4 @@
-% SLEIWEX mooring table
-% To add:
-% - Change depth column to be: Planned, Water, Instrument
-%   - Water depth should perhaps come from chart? or bathymetry?
-% - Plain text table for wiki
-
-\documentclass[letterpaper,10pt,landscape]{article}
-
-\usepackage{anysize}
-\usepackage{lscape}
-\usepackage{multirow}
-
-\marginsize{0.5in}{0.5in}{0.5in}{0.5in}
-
-\begin{document}
-\thispagestyle{empty}
-
-% digits:
-%   111e3*(00.00001) = 1.11m
-% so we should have at most 5 digits after the decimal in lat and lon
-
-
-\begin{table}
+\begin{sidewaystable}\scriptsize
   \label{t:mooring_table}
   \centering
   \begin{tabular}{|r|c|c|r|r|r|r|c|c|c|c|c|c|} \hline
@@ -74,5 +52,4 @@
    height of the first bin. Water depth was determined by doing a
    tidal fit to the instrument pressure signal to obtain $z_0$ using
    the {\tt t\_tide} package for Matlab.}
-\end{table}
-\end{document}
+\end{sidewaystable}
