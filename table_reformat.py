@@ -23,6 +23,7 @@ def main(indent='  '):
         lines = f.readlines()
         nlines = len(lines)
         iline = 0
+        rownum = 0
         while iline < nlines:
             print lines[iline].strip()
             if begin.match(lines[iline]):
@@ -37,6 +38,9 @@ def main(indent='  '):
                         if nparts == 1:
                             print lines[iline].strip()
                         else:
+                            rownum = rownum + 1
+                            print '\n'
+                            print indent, '% Row: ', rownum 
                             print indent, parts[0]
                             for ipart in range(1, nparts):
                                 print indent, '&', parts[ipart]
