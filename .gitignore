@@ -5,6 +5,7 @@
 *.log
 *.rel
 *.synctex.gz
+*latexmk
 
 #emacs backups
 *~
